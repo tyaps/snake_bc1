@@ -1,0 +1,422 @@
+
+.dataTable td{padding: 10px;}
+
+body#index {
+    font-family: 'Arial Regular', 'Arial';
+}
+
+#index .main
+{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    border: #ddd 1px solid;
+}
+
+#index .event_history
+{
+    width: 400px;
+    float: left;
+}
+
+
+#index .event_history .header
+{
+    background: #f03;
+    position: relative;
+    height: 80px;
+
+}
+
+#index .event_history .header .white_lines
+ {
+     background: #f03;
+     position: absolute;
+     top:24px;
+     left: 20px;
+
+    width: 30px;
+    height: 30px;
+ }
+#index .event_history .header .white_lines .white_line
+{
+    background-image: url("/img/common/u5_line.png");
+    width: 100%;
+    /*border: #999 1px solid;*/
+    height: 4px;
+    margin-bottom: 7px;
+}
+
+#index .event_history .header .text
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    /*font-family: 'Arial Bold', 'Arial';*/
+    padding: 15px 30px 0 70px;
+    width: 150px;
+}
+
+
+
+#index .event_history .itemList
+{
+    overflow-y: scroll;
+    height: 600px;
+}
+
+#index .event_history .itemList .messageConnectToCam
+{
+    text-align: center;
+}
+
+
+#index .event_history .itemList .item
+{
+    margin: 20px 10px 20px 20px;
+    clear: both;
+    height: 150px;
+    padding: 4px 0 4px 4px;
+}
+
+#index .event_history .itemList .item:hover
+{
+    cursor: pointer;
+    background: #9FC2C9;
+}
+
+#index .event_history .itemList .item.active
+{
+    cursor: default;
+    background: #009DDA;
+}
+
+
+
+#index .event_history .itemList .item .photo
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    float: left;
+}
+
+#index .event_history .itemList .item .photo img
+{
+    width: 150px;
+    height: 150px;
+}
+
+#index .event_history .itemList .item .similarity.c1
+{
+    color:#0a0;
+    font-weight: 700;
+}
+#index .event_history .itemList .item .similarity.c2
+{
+    color:#a00;
+    font-weight: 700;
+}
+
+
+#index .event_history .itemList .item .description
+{
+    margin: 0px 10px 10px 170px;
+    padding-top: 10px;
+}
+
+#index .event_history .itemList .item .description .title
+{
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #999999;
+}
+
+#index .event_history .itemList .item .description .value
+{
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #000;
+    padding-left: 10px;
+}
+/*--------------------------------------------- Всплывающие сообщения ------------------------------------------*/
+#output
+{
+    /*display: none;*/
+}
+
+#index #divFlashMessages
+{
+
+    width: 240px;
+    font-size: 10px;
+    position: absolute;
+}
+#index #divFlashMessages div
+{
+    padding: 4px;
+    border: #000 1px solid;
+    margin-bottom: 2px;
+}
+#index #divFlashMessages div button
+{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+/*--------------------------------------------- Правая сторона ------------------------------------------*/
+#index .event_details
+{
+    width: 600px;
+    float: left;
+}
+
+#index .event_details #divClientCard .messageConnectToCam
+{
+    text-align: center;
+    display: block;
+    height: 200px;
+}
+
+
+#index .event_details .logo
+{
+    background-image: url("/img/common/logo.jpg");
+    width: 142px;
+    height:132px;
+;
+    margin: 20px 0 0 40px;
+}
+
+#index .event_details .logo
+{
+    font-weight: 900;
+    font-style: normal;
+    font-size: 16px;
+    color: #999999;
+}
+
+#index .event_details .initialPhoto
+{
+    border: 1px solid;
+    margin: 10px;
+    float: left;
+    width: 150px;
+    /*height: 150px;*/
+}
+#index .event_details .initialPhoto img
+{
+    width: 150px;
+    /*height: 150px;*/
+}
+
+#index .event_details .details
+{
+   margin: 10px;
+}
+
+#index .event_details .details .visitorNotRecognized
+{
+    text-align: center;
+    height: 200px;
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+#index .event_details #divActionLog
+{
+    font-size: 10px;
+    border: 1px solid #000;
+    width: 300px;
+    position: absolute;
+    background: #fff;
+    z-index: 5;
+    margin-left: 500px;
+    margin-top: -200px;
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+#index .event_details .details .visitorFio th
+{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #999999;
+    text-align: left;
+    padding-right: 40px;
+}
+#index .event_details .details .visitorFio td
+{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    padding: 5px;
+}
+
+#index .event_details .details .dataItem
+{
+    margin: 10px;
+    margin-left: 160px;
+}
+
+#index .event_details .details .dataItem .title
+{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #999999;
+    display: inline-block;
+    width: 100px;
+}
+
+#index .event_details .details .dataItem .data
+{
+
+
+}
+
+#index .event_details .details .dataItem .data.pin
+ {
+     display: inline-block;
+     padding: 5px 10px;
+     border: #999 1px solid;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+ }
+#index .event_details .details .dataItem .title.long
+{
+    display: inline;
+    padding-right: 10px;
+}
+
+#index .event_details .commandButtons
+{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 0;
+    width: 450px;
+}
+
+#index .event_details .commandButtons table td{
+    padding: 0 10px;
+}
+
+#index .event_details .commandButtons button
+{width: 200px;height: 40px;}
+
+
+#index .event_details .commandButtons table.rooms td{
+    vertical-align: top;
+}
+#index .event_details .commandButtons table.rooms button
+{
+    width: 100px;height: 30px;
+}
+
+#index .event_details .statButtons
+{
+    width: 440px;
+    margin: 30px 10px 0 auto;
+}
+#index .event_details .statButtons button
+{
+    width: 420px;
+}
+
+#index .event_details .statButtons button.set
+{border:4px #000 solid;}
+
+#index .event_details .statButtons .green
+{
+    background-color: #0a0;
+    padding: 10px;
+}
+#index .event_details .statButtons .red
+{
+
+    background-color: #a00;
+    padding: 10px;
+}
+
+/*админская панель справа вверху*/
+#index .adminPane
+{
+    position: absolute;
+    top: 20px;
+    z-index: 500;
+    right: 50px;
+    border: 1px solid #000;
+    padding: 4px;
+    font-size: 10px;
+}
+
+#index .adminPane .title
+{
+    position: relative;
+
+    background: #fff;
+    border: 1px solid #000;
+    padding: 2px;
+    width: 100px;
+    margin-top: -14px;
+    margin-bottom: 4px;
+}
+
+#index .adminPane #ddlCamera
+{
+    width: 170px;
+}
+
+#index .adminPane .status
+ {
+     padding-left: 10px;
+ }
+#index .adminPane .status.ok
+{
+    color: #0a0;
+    font-weight: 700;
+}
+#index .adminPane .status.bad
+{
+    color: #a00;
+    font-weight: 700;
+}
+
+
+
+
+#adminBankPersons #divClientForm {
+
+    border: 1px solid #000;
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    margin: 0 auto;
+    left: 300px;
+    background: #fff;
+    padding: 10px;
+    z-index: 5;
+}
+
+/*------------------------------------------- Админка -------------------------------------*/
+
+#adminBankPersons #results table
+{
+    width: 800px;
+}
+
+#adminBankPersons .searchParam
+{
+    width: 300px;
+
+    border:1px solid #000;
+    margin:0 0 20px 400px;
+}
+
+

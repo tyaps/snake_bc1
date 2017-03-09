@@ -1,0 +1,14 @@
+
+{
+
+
+    "nodeJsServerIp" : "127.0.0.1",
+    "nodeJsServerPort" : "3005",
+
+
+    //узел, на который идут запросы в BC
+    "BLOCKCHAIN_NODE_URL":"https://1cd97ac595e0436095675e17cdcad7d8-vp0.us.blockchain.ibm.com:5004/chaincode",
+    "BLOCKCHAIN_CHAINCODE_ID":"8260e2eb1876b7288eea2581292d2afa7a347083eef36ff0429df3de3935f47efe14af33d718c4e891afaf212648231727efa4d9360af94b8ecacd2f4c6c8cf5",
+    "BLOCKCHAIN_SECURE_CONTEXT": "user_type1_0"
+
+}

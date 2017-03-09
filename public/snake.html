@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake</title>
+
+    <style>
+        #playground{border: 1px solid #000;}
+
+        #playground td {border: 1px solid #000;
+        padding:10px;
+        }
+
+        #playground .pl{ background: #a00;}
+
+        #playground .item{ background: #0a0;}
+    </style>
+
+    <script src="/js/jquery-3.1.1.min.js"></script>
+
+    <script src="/js/snake.js" ></script>
+
+
+</head>
+<body>
+
+aaa
+<div >
+    <table id="playground" border="1"></table>
+
+    <div id="playerPanel">
+        Name: <input type="text" id="tbPlayerName" value="p1"/>
+        Score: <span id="lblScore"></span>
+        <button id="btnStart" onclick="snake.start($('#tbPlayerName').val())">Start</button>
+        <button id="btnLoadHistory" onclick="snake.loadHistory($('#tbPlayerName').val())">Load History</button>
+        <button id="btnSortHistory" onclick="snake.sortHistory()">Sort History</button>
+
+        <button id="btnPlayHistory" onclick="snake.playHistory()">Play History</button>
+    </div>
+    <button onclick="snake.saveState()">Save</button>
+
+    <div id="divHistory"></div>
+</div>
+</body>
+</html>
